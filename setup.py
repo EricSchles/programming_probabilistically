@@ -9,12 +9,12 @@ README = (HERE / "README.md").read_text()
 
 # This call to setup() does all the work
 setup(
-    name="programming_probabilistically",
+    name="stilts-ml",
     version="0.1",
-    description="A set of reference implementations for machine learning",
+    description="A set of reference implementations for machine learning, from the book programming probabilistically.",
     long_description=README,
     long_description_content_type="text/markdown",
-    url="https://github.com/EricSchles/programming_probabilistically",
+    url="https://github.com/EricSchles/stilts-ml",
     author="Eric Schles",
     author_email="ericschles@gmail.com",
     license="MIT",
@@ -24,7 +24,7 @@ setup(
         "Programming Language :: Python :: 3.6",
         "Programming Language :: Python :: 3.7",
     ],
-    packages=[],
+    packages=["stilts_ml", "stilts_ml.neural_network"],
     include_package_data=True,
-    install_requires=["pytest"],
+    install_requires=["numpy", "pytest"],
 )
